@@ -27,6 +27,11 @@ public class MyLinkedList<T> implements MyList<T> {
         size++;
     }
 
+    @Override
+    public void add(T element, int index) {
+
+    }
+
     public void add(int index, T element) {
         if (index < 0 || index > size) throw new IndexOutOfBoundsException();
         Node newNode = new Node(element);
