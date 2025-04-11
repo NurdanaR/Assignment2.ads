@@ -8,17 +8,15 @@ public class MyStack<T> {
     }
 
     public T pop() {
-        if (list.isEmpty()) throw new RuntimeException("Stack is empty");
         return list.remove(list.size() - 1);
     }
 
     public T peek() {
-        if (list.isEmpty()) throw new RuntimeException("Stack is empty");
         return list.get(list.size() - 1);
     }
 
     public boolean isEmpty() {
-        return list.isEmpty();
+        return list.size() == 0;
     }
 
     public int size() {
