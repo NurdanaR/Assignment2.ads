@@ -1,0 +1,57 @@
+# Java Data Structures: MyArrayList, MyLinkedList, MyStack, MyQueue, MyMinHeap
+
+## Описание
+Этот проект реализует базовые структуры данных на Java без использования java.util.* (кроме `Iterator`).
+Каждая структура написана вручную, с нуля, и максимально приближена к учебному формату (по лекциям 3 и 4).
+
+## Реализованные классы
+
+### 1. MyList<T> (интерфейс)
+Общий интерфейс для всех физических списков. Содержит базовые методы: add, remove, get, sort, size, clear и т.д.
+
+### 2. MyArrayList<T>
+Реализация массива фиксированной длины с поддержкой вставки, удаления, сортировки и перебора.
+
+### 3. MyLinkedList<T>
+Реализация двусвязного списка с внутренним классом MyNode, содержащим prev, next, data.
+
+### 4. MyStack<T>
+Логическая структура стек (LIFO) на основе MyArrayList.
+
+Методы:
+- push(T element)
+- pop()
+- peek()
+
+### 5. MyQueue<T>
+Логическая структура очередь (FIFO) на основе MyLinkedList.
+
+Методы:
+- enqueue(T element)
+- dequeue()
+- peek()
+
+### 6. MyMinHeap<T extends Comparable<T>>
+Логическая структура минимальная куча (бинарная куча) на основе MyArrayList, начиная с индекса 1.
+
+Методы:
+- insert(T element)
+- extractMin()
+- getMin()
+- heapify(int index)
+- traverseUp(int index)
+- swap(int i, int j)
+- leftChildOf(int i)
+- rightChildOf(int i)
+- parentOf(int i)
+
+### 7. Main.java
+Тестовый класс, демонстрирующий работу всех структур:
+ Добавление/удаление из списка
+ Работа со стеком и очередью
+ Вставка и извлечение min из кучи
+
+
+
+Moldabay Nurdana
+Группа: SE-2406
